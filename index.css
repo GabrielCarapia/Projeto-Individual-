@@ -111,8 +111,8 @@ h2{
 }
 
 .informacao{
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    font-family: inherit;
     padding: 10px 0px;
 }
 
@@ -141,12 +141,26 @@ h2{
     padding: 20px 20px;
 }
 
+.mensagem-image img{
+    height: 100px;
+    width: 60%;
+}
+
+
 .proxima-pagina{
     margin-top: 30px;
-    background-color:rgb(39, 129, 189);
-    height: 50px;
-    
+    background-color:rgb(50, 35, 180);
+    height: 50px;   
 }
+
+.botao-caca{
+    text-align: center;
+    height: 50px;
+    width: 20%;
+}
+
+
+
 
 
 
