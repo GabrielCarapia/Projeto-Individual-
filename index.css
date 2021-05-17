@@ -1,0 +1,153 @@
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    background-color:rgb(45, 45, 138);
+}
+
+.container{
+    background-color: rgb(45, 45, 138);
+    border-bottom: 6px solid rgb(93, 95, 197);
+}
+
+.container img{
+    width: 5%;
+    height: 60px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.menu-site{
+    list-style: none;
+    padding: 0;
+}
+
+
+.menu-site li{
+    display: inline;
+}
+
+.container ul{
+    margin-left: 950px;
+}
+
+.menu-site li a{
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: backgroung .6s;
+}
+
+.menu-site li a:hover{
+    background-color: rgb(39, 129, 189);
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://startupi.com.br/wp-content/uploads/2020/11/vitreo-games-870x250.jpg);
+    background-size: cover;
+}
+
+.banner .frase-motivadora{
+    color: rgb(145, 146, 211);
+    font-size: 30px;
+    font-family: 'Times New Roman';
+}
+
+.banner .texto{
+    text-align: center;
+    padding-top: 240px;
+}
+
+.div-mae{
+    background-color:rgb(68, 89, 180) ;
+    height: 440px;
+    width: 80%;
+    margin-top: 40px;
+    padding: 100px 40px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: rgb(17, 12, 31);
+
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.linha-do-tempo{
+    background-color: black;
+    height: 6px;
+    width: 90%;
+    text-align: center;
+}
+
+
+.botao-ano{
+    margin-top: 7px;
+    margin-right: 7px;
+    color: rgb(162 169 231);
+    background-color:rgb(45, 45, 138);
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(162 169 231);
+    cursor: pointer;
+}
+
+.botao-ano:hover{
+    background-color:rgb(102, 75, 199);
+}
+
+.informacao{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 0px;
+}
+
+.mensagem-historia{
+    display: none;
+    background-color: #6767ff;
+    width: 60%;
+    float: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #6c98ff;
+    padding: 30px 20px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.mensagem-image{
+    display: none;
+    background-color:black;
+    width: 27%;
+    float: right;
+    border-style: solid;
+    border-color: orangered;
+    border-width: 3px;
+    padding: 20px 20px;
+}
+
+.proxima-pagina{
+    margin-top: 30px;
+    background-color:rgb(39, 129, 189);
+    height: 50px;
+    
+}
+
+
+
+

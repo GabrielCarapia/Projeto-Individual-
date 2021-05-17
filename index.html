@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="simbolo-so.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <title>Games History</title>
+</head>
+
+<body>
+    <!--Menu-site-->
+    <div class="container">
+        <div class="menu-site">
+            <img src="logo-site-definido.png" alt="">
+            <ul>
+                <li> <a href="">HOME</a> </li>
+                <li> <a href="">CONTATO</a> </li>
+                <li> <a href="">QUEM SOMOS?</a> </li>
+                <li> <a href="">LOGIN</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!--Fim Menu-site-->
+
+    <!--Imagem do site-->
+    <div class="banner">
+        <div class="container-imagem">
+            <div class="texto">
+                <h1 class="frase-motivadora">Se obter um game over, <br> não desista de tentar mude de fliperama e volte
+                    a jogar!</h1>
+            </div>
+        </div>
+    </div>
+    <!--Fim imagem site-->
+
+    <!--Linha do tempo-->
+    <div class="div-mae">
+        <h2>LINHA DO TEMPO</h2>
+        <div class="linha-do-tempo">
+            <button class="botao-ano" onclick="ano_1958()">1958</button>
+            <button class="botao-ano" onclick="ano_1961()">1961</button>
+            <button class="botao-ano" onclick="ano_1971()">1971</button>
+            <button class="botao-ano" onclick="ano_1972()">1972</button>
+            <button class="botao-ano" onclick="ano_1976()">1976</button>
+            <button class="botao-ano" onclick="ano_1977()">1977</button>
+            <button class="botao-ano" onclick="ano_1981()">1981</button>
+            <button class="botao-ano" onclick="ano_1983()">1983</button>
+            <button class="botao-ano" onclick="ano_1986()">1986</button>
+            <button class="botao-ano" onclick="ano_1988()">1988</button>
+            <button class="botao-ano" onclick="ano_1990()">1990</button>
+            <button class="botao-ano" onclick="ano_1991()">1991</button>
+            <button class="botao-ano" onclick="ano_1992()">1992</button>
+            <button class="botao-ano" onclick="ano_1993()">1993</button>
+            <button class="botao-ano" onclick="ano_1994()">1994</button>
+            <button class="botao-ano" onclick="ano_1996()">1996</button>
+            <button class="botao-ano" onclick="ano_1998()">1998</button>
+            <button class="botao-ano" onclick="ano_2000()">2000</button>
+            <button class="botao-ano" onclick="ano_2001()">2001</button>
+            <button class="botao-ano" onclick="ano_2005()">2005</button>
+            <button class="botao-ano" onclick="ano_2006()">2006</button>
+            <br><br><br>
+            <div></div>
+            <div class="informacao">Clique no ano para entender a evolução dos games!</div><br><br>
+            <div id="mostrando_a_div" class="mensagem-historia"></div>
+            <div id="mostrando_image" class="mensagem-image"></div>
+           
+        </div>
+    </div>
+
+    <div class="proxima-pagina">
+        
+    </div>
+
+</body>
+
+</html>
+
+<script>
+function ano_1958() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "O primeiro jogo da história surgiu em 1958, foi criado pelo físico Willy Higinbotham e recebeu o nome de Tennis Programing, também conhecido como Tennis for Two. Ele era um jogo muito simples, jogado por meio de um osciloscópio."
+    mostrando_image.innerHTML = `<img src="imagens jogos antigos/tennis_programing.png">`
+}
+function ano_1961() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1961, no Massachusetts Institute of Technology (MIT), os pesquisadores criaram o jogo Spacewar!, cujo tema era uma guerra espacial, estando o jogador no controle de uma das naves que enfrentava naves inimigas. Esse jogo foi programado em Assembly (nome da linguagem de programação de baixo nível)."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/space.png">`
+}
+function ano_1971() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "O primeiro jogo de fliperama chamouse Computer Space e foi lançado em 1971. Logo outros jogos de sucesso surgiram, como Pong, Invasores do espaço e Pac-Man. O primeiro console caseiro também surgiu nessa época. "
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/fliperama.png">`
+}
+function ano_1972() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1972, Raph Baer lançou o primeiro console da história, o Odyssey 100. Esse console era compatível com as televisões da empresa Magnavox. O Odyssey 100 possuía placas de circuito impresso, cujo objetivo era armazenar os jogos (ARANHA, 2004). O console oferecia doze jogos, permitindo ao usuário escolher qual ele queria jogar. A maioria dos jogos tinha como tema o esporte. O console ainda oferecia um rifle comercial para ser usado em jogos de tiro."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/raph_baer.png">`
+}
+function ano_1976() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Surgiu, em 1976, o primeiro console da história a ser considerado como programável, o FairChild Channel F. Programável porque não eram mais necessárias aquelas operações complexas para trocar de jogo. Para jogar um outro jogo era só trocar o cartucho."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/fairchild.png">`
+}
+function ano_1977() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1977, a empresa Atari lançou um console com cartuchos removíveis. Cada cartucho fazia rodar um jogo diferente. Com esse sistema, os jogos eletrônicos ganharam popularidade, mas as pessoas ainda queriam imagens e sons melhores.<br><br> A Warner lançou em 1977, o console Atari 2600. Esse console se tornou um dos maiores sucessos na área de entretenimento eletrônico, vendendo cerca de 25 milhões de unidades em cinco anos, atingindo a marca de 5 bilhões de dólares, fazendo assim, com que a empresa Atari dominasse o mercado de jogos entre final dos anos 70 e o início dos anos 80."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/atari.png">`
+}
+function ano_1981() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1981, Shigeru Miyamoto – Nintendo – lançou o Donkey Kong. Em seu enredo, o herói, com o apelido de Jumpman, um carpinteiro baixinho, deveria salvar sua namorada Pauline das garras de um gorila raivoso. Para isso era preciso que o carpinteiro vencesse obstáculos, saltasse por cipós, atravessasse rios até encontrá-la e resgatá-la."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/dong kong.png">`
+}
+function ano_1983() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1983, um ano antes do crash de 1984, a Nintendo lançou no Japão o console Famicon (Family Computer)."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/famicon.png">`
+}
+function ano_1985() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1985, esse console Famicon chegou nos Estados Unidos com o nome de Nintendo Entertainment System."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/famicon.png">`
+}
+function ano_1985() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1986, a empresa japonesa Sega, que desenvolvia jogos de sucesso para os arcades, entrou no mercado para concorrer com a Nintendo. Nesse contexto, a Sega lançou o Master System. Como as softhouses tinham um contrato exclusivo assinado com a Nintendo, elas não poderiam produzir para outra empresa, então, como conseqüência desse fato, o Master System não fez frente ao Nintendo, ficando restrito aos 10% do mercado de jogos junto com o Atari e Intellivision"
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/master.png">`
+}
+function ano_1988() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1988, a Sega, insatisfeita com o sucesso da Nintendo e seu NES, lançou o primeiro console de 16 bits da história, o Mega Drive (Japão e Brasil), que também é conhecido como Sega Gênesis (Estados Unidos)."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/sega.png">`
+}
+function ano_1990() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1990 a Nintendo lançou o seu console de 16 bits, o Super Famicom, conhecido também como SNES (Super Nintendo Entertainment System), ou apenas Super Nintendo. O console da Nintendo era mais poderoso em todos os sentidos menos no processador que rodava a 3.57 Mhz, dificultando assim, o desenvolvimento de jogos com maior qualidade para o console. Isso, no entanto, não impediu o seu sucesso, conseguindo, em pouco tempo, retomar a liderança."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/super_nintendo.png">`
+}
+function ano_1991() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "No ano de 1991, lançou-se a evolução do Street Fighter I, o Capcom Street Fighter II. Este jogo adotou o modelo de animação por sprites. Segundo Power (2007) sprites são as imagens que dão vida ao personagem. Um sprite é um conjunto de fotos que dão a impressão de movimento do personagem. Street Fighter II revolucionou e popularizou o gênero de luta, tornando-se o jogo mais popular dessa década."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/street fighter.png">`
+}
+function ano_1992() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1992, a Acclaim, lançou o Mortal Kombat. O jogo adotou o modelo de animação por captura de movimentos e digitalização subseqüente, ou seja, imagens de atores foram digitalizadas e animadas para a ação. Com isso, houve um maior realismo estético. Em contrapartida, a violência desse jogo e do jogo Night Trap abalou o Senado americano em 1993. Os senadores Joseph Lieberman e Herbert Kohl fizeram uma pesquisa para saber como a violência dos jogos estava interferindo na vida dos usuários."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/mortal_kombat.png">`
+}
+function ano_1993() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1993, a SEGA lançou o Virtua Fighter. Esse jogo foi uma revolução, pois utilizou um modelo de animação por objetos tridimensionais. Construções poligonais foram animadas levando em consideração a massa e a aceleração em tempo real de processamento. <br> <br> No Brasil, o Super Nintendo chegou em 1993 e fez muito sucesso, sendo produzido e vendido até hoje pela Gradiente. <br> <br> Em 1993, foi lançado nos Estados Unidos o Atari Jaguar, sendo considerado o primeiro console de 64 bits. Na verdade ele não é definitivamente um console de 64 bits, porque utiliza dois processadores de 32 bits e não um de 64 bits"
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/atari_jaguar.png">`
+}
+function ano_1994() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1994 a Sega lançou o console Saturn. Esse console deveria substituir o Mega Drive e as deficiências do Sega CD. O Saturn era um poderoso console capaz de rodar os jogos de maior sucesso dos arcades com perfeição, para isso utilizava todos os recursos gráficos necessários. <br> <br> Em 1994, foi lançado no Japão o Playstation da Sony, vendendo cerca de 1 milhão de unidades só no verão japonês. Já nos Estados Unidos, o console foi lançado em 1995, vendendo mais de 100 mil unidades no primeiro final de semana. O Playstation foi de fato o primeiro console a divulgar a mídia CD."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/PS1.png">`
+}
+function ano_1996() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1996, o Playstation já era líder no mercado de consoles e tinha o suporte de quase todas as softhouses do mundo. Um dos motivos desse grande apoio das softhouses era a linguagem utilizada para o desenvolvimento dos jogos: o C/C++. <br> <br> No mesmo ano, a Nintendo lançou o Nintendo 64. Este console chamou muito a atenção do mercado devido ao seu processador gráfico que possibilitou gráficos de alta qualidade com uma profundidade de cor de até 32 bits. O Nintendo 64 possuía também um avançado processador de áudio, sendo possível a alta qualidade da trilha e efeitos sonoros. Os personagens, cenários e efeitos eram muito mais realistas do que a concorrência"
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/nintendo_64.png">`
+}
+function ano_1998() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 1998, a Sega lançou o DreamCast. Esse console foi o primeiro a vir com um modem embutido para acesso à internet, permitindo, assim, jogos on-line, como o Phantasy Star OnLine, cujo gênero era RPG."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/dream_cas.png">`
+}
+function ano_2000() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em março de 2000, foi lançado no Japão o Playstation 2. Este console é a evolução do Playstation. O PS2 foi lançado com suporte ao Playstation, nesse contexto todos os jogos que rodavam no Playstation são compatíveis com o Playstation 2, permitindo, assim, o aumento da biblioteca de jogos do PS2."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/PS2.png">`
+}
+function ano_2001() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 2001, a Nintendo lançou o GameCube, com a intenção de retornar ao mercado que tinha sido perdido para a Sony. Em novembro do mesmo ano, a Microsoft entrou no mercado dos consoles lançando o XBOX. O aparelho utilizou a tecnologia DirectX, que é uma coleção de APIs2 : trabalha com tarefas relacionadas à programação de jogos para o sistema operacional Microsoft Windows, padronizando, assim, a comunicação entre software e hardware. Essa tecnologia facilita a adaptação de grandes sucessos dos PCs para o console."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/xbox.png">`
+}
+function ano_2005() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 2005, foi lançado o XBOX 360, evolução do Microsoft XBOX. Esse console realiza diferentes cálculos como inteligência artificial, simulação de física e outros que podem ser feitos paralelamente sem sobrecarregar o sistema, permitindo que os jogos ofereçam inimigos mais inteligentes e mundos que simulam a realidade com maior precisão. O gerenciamento dessas operações é possível devido à grande quantidade de memória cache."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/xbox_360.png">`
+}
+function ano_2006() {
+    mostrando_a_div.style.display = "block"
+    mostrando_image.style.display = "block"
+    mostrando_a_div.innerHTML = "Em 2006 a Nintendo lançou o Wii, provocando uma revolução na maneira de se jogar. Esse console possui um manete que capta os movimentos que o jogador faz ao movê-lo, funcionando como uma espécie de “mouse” aéreo. Essa captação é possível porque o controle remoto do Wii possui um sensor de sinais que utiliza a tecnologia Bluetooth. <br> <br> Ainda em 2006, foi lançado o Playstation 3. Este console utiliza o Bluetooth que permite a ligação de um máximo de sete controles. O Playstation 3 é totalmente compatível com o Playstation 1 e com o Playstation 2. Como já acontece no Playstation 2, o Playstation 3 permite a conexão com a Internet. Seus principais concorrentes são o XBOX 360 e o Wii."
+    mostrando_image.innerHTML = `<img src="Imagens jogos antigos/wii.png"><br><img src="Imagens jogos antigos/PS3.png">`
+}
+</script>
