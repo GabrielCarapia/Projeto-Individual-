@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color:rgb(45, 45, 138);
+    background-image: url(https://i.pinimg.com/564x/a4/c3/92/a4c392f58f1ceb71a28a64067f2a4a02.jpg);
 }
 
 .container{
@@ -56,9 +56,10 @@ body{
 }
 
 .banner .frase-motivadora{
-    color: rgb(145, 146, 211);
+    color: rgb(162 169 231);
     font-size: 30px;
-    font-family: 'Times New Roman';
+    font-family: Arial, Helvetica, sans-serif;;
+    text-transform: uppercase;
 }
 
 .banner .texto{
@@ -132,31 +133,61 @@ h2{
 
 .mensagem-image{
     display: none;
-    background-color:black;
+    background-color:#6767ff;
     width: 27%;
     float: right;
     border-style: solid;
-    border-color: orangered;
+    border-color: #6c98ff;;
     border-width: 3px;
     padding: 20px 20px;
 }
 
 .mensagem-image img{
     height: 100px;
-    width: 60%;
+    width: 70%;
 }
 
 
 .proxima-pagina{
     margin-top: 30px;
-    background-color:rgb(50, 35, 180);
-    height: 50px;   
+    background-color: rgb(33 40 83);
+    height: 25px; 
+}
+
+.proxima-pagina2{
+    background-color: rgb(33 40 83);
+    height: 25px;
+    margin-top: 10px;
+}
+
+.div_botao{
+    text-align: center;
 }
 
 .botao-caca{
-    text-align: center;
     height: 50px;
     width: 20%;
+    background-color: rgb(80, 80, 170);
+    border-color: rgb(80, 80, 170);
+    border-style: solid;
+    margin-top: 10px;
+}
+
+.botao-caca a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.botao-caca:hover{
+    background-color: rgb(46, 31, 99);
+}
+
+.contato-inicial{
+    background-color: black;
+    height: 200px;
+    margin-top: 20px;
 }
 
 
