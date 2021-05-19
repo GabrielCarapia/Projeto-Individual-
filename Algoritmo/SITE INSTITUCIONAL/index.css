@@ -51,7 +51,7 @@ body{
 .banner{
     width: 100%;
     height: 500px;
-    background-image: url(https://startupi.com.br/wp-content/uploads/2020/11/vitreo-games-870x250.jpg);
+    background-image: url("https://startupi.com.br/wp-content/uploads/2020/11/vitreo-games-870x250.jpg");
     background-size: cover;
 }
 
@@ -186,11 +186,89 @@ h2{
 
 .contato-inicial{
     background-color: black;
-    height: 200px;
+    height: 280px;
     margin-top: 20px;
 }
 
+.icone-insta img{
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
 
+.icone-insta a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icone-insta a:hover{
+    color: violet;
+}
+
+.icone-git img{
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icone-git a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icone-git a:hover{
+    color: #1e84f5;
+}
+
+.telefone img{
+    height: 15px;
+    width: 20px;
+}
+
+.telefone{
+    color: white;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+
+.classificacao img{
+    float: right;
+    width: 15%;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.botao-cadastro{
+    float: right;
+    margin-right: 60px;
+    margin-top: 50px;
+    background-color: rgb(31 121 254);
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    padding: 3px 4px;
+}
+
+.botao-cadastro a:hover{
+    color: rgb(8, 37, 100) ;
+}
 
 
 
