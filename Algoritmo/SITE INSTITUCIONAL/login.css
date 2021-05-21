@@ -1,0 +1,160 @@
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/564x/a4/c3/92/a4c392f58f1ceb71a28a64067f2a4a02.jpg);
+}
+
+.container{
+    background-color: rgb(45, 45, 138);
+    border-bottom: 6px solid rgb(93, 95, 197);
+}
+
+.container img{
+    width: 5%;
+    height: 60px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.menu-site{
+    list-style: none;
+    padding: 0;
+}
+
+
+.menu-site li{
+    display: inline;
+}
+
+.container ul{
+    margin-left: 950px;
+}
+
+.menu-site li a{
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background .6s;
+}
+
+.menu-site li a:hover{
+    background-color: rgb(39, 129, 189);
+}
+
+.div_login{
+    background-color: rgb(45, 45, 138);
+    width: 40%;
+    height: 400px;
+    margin-top: 70px;
+    float: left;
+    margin-left: 200px;
+    border-radius: 20px;
+}
+
+.div_altura_input{
+    padding: 40px 40px;
+    display: flex;
+}
+
+
+.texto{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.input{
+    float: left;
+    height: 30px;
+    width: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 4px solid #1e84f5 ;
+    padding-left: 7px;
+    outline: none;
+}
+
+input::placeholder{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.input-senha{
+    float: left;
+    height: 30px;
+    width: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 4px solid #1e84f5 ;
+    padding-left: 7px;
+    outline: none;
+}
+
+.botao-entrar{
+    padding: 8px 7px;
+    background-color: #1e84f5;
+    margin-top: 25px;
+    border: 3px solid white;
+}
+
+.sem-cadastro{
+    display: inline-block;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sem-cadastro a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.sem-cadastro a:hover{
+    color: rgb(8, 37, 100);
+}
+
+
+.botao-cadastro-login{
+    background-color: #1e84f5;
+    margin-top: 20px;
+    border: 3px solid white;
+    padding: 8px 7px;
+    margin-left: 3px;
+}
+
+
+.gif-jogo{
+    width: 27%;
+    height: 300px;
+    margin-top: 90px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.mostrando-gif img{
+    width: 90%;
+    height: 350px;
+    border: 4px solid white;
+}
+
+.esquece-senha a{
+    color: white;
+    font-size: 20px;
+    display: table;
+}
+@media screen and (max-width: 600px){
+    body{
+        
+    }
+
+}
