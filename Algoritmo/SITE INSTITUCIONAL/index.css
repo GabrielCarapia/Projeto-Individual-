@@ -33,7 +33,7 @@ body{
 }
 
 .container ul{
-    margin-left: 950px;
+    margin-left: 850px;
 }
 
 .menu-site li a{
@@ -65,7 +65,6 @@ body{
 .banner .texto{
     text-align: center;
     padding-top: 240px;
-    margin-left: 250px;
 }
 
 .div-mae{
@@ -186,7 +185,7 @@ h2{
 }
 
 .contato-inicial{
-    background-color: black;
+    background-image: url(https://i.pinimg.com/originals/0a/d1/d7/0ad1d7cef24a77e15099915897edb089.gif);
     height: 280px;
     margin-top: 20px;
 }
