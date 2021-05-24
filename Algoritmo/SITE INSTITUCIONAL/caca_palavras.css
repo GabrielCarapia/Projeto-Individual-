@@ -47,10 +47,103 @@ body{
     background-color: rgb(39, 129, 189);
 }
 
-.cadastro{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: white;
-    font-size: 30px;
+.tg{
+    border-collapse:collapse;
+    border-spacing:0;
+    align-items: center;
     text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.tg td{
+    border-color:white;
+    border-style:solid;
+    border-width:3px;
+    font-family:Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    overflow:hidden;
+    padding:7px 3px;
+    word-break:normal;
+}
+
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg .tg-c3ow{
+    border-color:inherit;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-dvpl{
+    border-color:inherit;
+    text-align:right;
+    vertical-align:top
+}
+
+.tg .tg-0pky{
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+}
+
+.tg .tg-0lax{
+    text-align:left;
+    vertical-align:top
+}
+
+.tg .tg-fuxe{
+    border-color:inherit;
+    font-size:18px;
+    text-align:left;
+    vertical-align:top
+}
+
+.div-fundo{
+    background-color: rgb(92, 92, 212);
+    height: 1500px;
+    width: 50%;
+    margin-top: 50px;
+    float: left;
+    margin-left: 50px;
+}
+
+.invisivel{
+    visibility:hidden;
+}
+
+input {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    padding: 5px 3px;
     text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    background-color: #8fd6ff;
+    color: white;
+    border: solid 3px blue;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+.numero-da-coluna {
+    background-color: white;
+}
+
+
+input:disabled {
+    color: white;
+    background-color: #8fd6ff
 }
