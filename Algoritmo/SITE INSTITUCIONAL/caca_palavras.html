@@ -63,7 +63,7 @@
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
-                        <td class="tg-0lax"><input></td>
+                        <td class="tg-0lax"><input id="campo_59" onkeyup="verifica(5)" maxlength="1"></td>
                     </tr>
                     <!--Quarta linha-->
                     <tr>
@@ -78,7 +78,7 @@
                         <td class="tg-0lax"><input id="campo_45" onkeyup="verifica(3)" maxlength="1"></td>
                         <td class="tg-0lax"><input id="campo_46" onkeyup="verifica(3)" maxlength="1"></td>
                         <td class="tg-0lax"><input id="campo_47" onkeyup="verifica(3)" maxlength="1"></td>
-                        <td class="tg-0lax"><input id="campo_48" onkeyup="verifica(3)" maxlength="1"></td>
+                        <td class="tg-0lax"><input id="campo_48" onkeyup="verifica(3); verifica(5)" maxlength="1"></td>
                         <td class="tg-0lax"><input id="campo_49" onkeyup="verifica(3)" maxlength="1"></td>
                     </tr>
                     <!--Quinta linha-->
@@ -94,7 +94,7 @@
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
-                        <td class="tg-0lax"><input></td>
+                        <td class="tg-0lax"><input id="campo_60" onkeyup="verifica(5)" maxlength="1"></td>
                     </tr>
                     <!--Sexta linha-->
                     <tr>
@@ -109,7 +109,7 @@
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
-                        <td class="tg-0lax"><input></td>
+                        <td class="tg-0lax"><input id="campo_61" onkeyup="verifica(5)" maxlength="1"></td>
                     </tr>
                     <!--Sétima linha-->
                     <tr>
@@ -124,7 +124,7 @@
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
-                        <td class="tg-0lax"><input></td>
+                        <td class="tg-0lax"><input id="campo_62" onkeyup="verifica(5)" maxlength="1"></td>
                     </tr>
                     <!--Oitava linha-->
                     <tr>
@@ -139,7 +139,7 @@
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
-                        <td class="tg-0lax"><input></td>
+                        <td class="tg-0lax"><input id="campo_63" onkeyup="verifica(5)" maxlength="1"></td>
                     </tr>
                     <!--Nona linha-->
                     <tr>
@@ -154,7 +154,7 @@
                         <td class="tg-0lax"><input></td>
                         <td class="tg-0lax"><input></td>
                         <td class="tg-0lax"><input></td>
-                        <td class="tg-0lax"><input></td>
+                        <td class="tg-0lax"><input id="campo_64" onkeyup="verifica(5)" maxlength="1"></td>
                     </tr>
                     <!--Décima linha-->
                     <!--Décima primeira linha-->
@@ -170,7 +170,7 @@
                         <td class="tg-0lax"><input></td>
                         <td class="tg-0lax"><input></td>
                         <td class="tg-0lax"><input></td>
-                        <td class="tg-0lax"><input></td>
+                        <td class="tg-0lax"><input id="campo_65" onkeyup="verifica(5)" maxlength="1"></td>
                         <td class="tg-0lax"><input></td>
                         <td class="tg-0lax"><input></td>
                     </tr>
@@ -245,15 +245,15 @@
                         <td class="invisivel"></td>
                         <td class="invisivel"></td>
                         <td class="numero-da-coluna">7</td>
-                        <td class="tg-0lax"><input id="campo_13" onkeyup="verifica(0)" maxlength="1"></td>
-                        <td class="tg-0lax"><input></td>
-                        <td class="tg-0lax"><input></td>
-                        <td class="tg-0lax"><input id="campo_52" onkeyup="verifica(4)" maxlength="1"></td>
-                        <td class="tg-0lax"><input></td>
-                        <td class="tg-0lax"><input id="campo_28" onkeyup="verifica(2)" maxlength="1"></td>
-                        <td class="tg-0lax"><input></td>
-                        <td class="tg-0lax"><input></td>
-                        <td class="tg-0lax"><input></td>
+                        <td class="tg-0lax"><input id="campo_13" onkeyup="verifica(0); verifica(6)" maxlength="1"></td>
+                        <td class="tg-0lax"><input id="campo_65" onkeyup="verifica(6)" maxlength="1"></td>
+                        <td class="tg-0lax"><input id="campo_66" onkeyup="verifica(6)" maxlength="1"></td>
+                        <td class="tg-0lax"><input id="campo_52" onkeyup="verifica(4); verifica(6)" maxlength="1"></td>
+                        <td class="tg-0lax"><input id="campo_67" onkeyup="verifica(6)" maxlength="1"></td>
+                        <td class="tg-0lax"><input id="campo_28" onkeyup="verifica(2); verifica(6)" maxlength="1"></td>
+                        <td class="tg-0lax"><input id="campo_68" onkeyup="verifica(6)" maxlength="1"></td>
+                        <td class="tg-0lax"><input id="campo_69" onkeyup="verifica(6)" maxlength="1"></td>
+                        <td class="tg-0lax"><input id="campo_70" onkeyup="verifica(6)" maxlength="1"></td>
                     </tr>
                     <!--Décimo oitava linha-->
                     <tr>
@@ -524,7 +524,7 @@
                 break
 
             case 4: 
-                var ATARI2600 = (campo_50.value + campo_51.value + campo_52.value + campo_53.value + campo_54.value + campo_55.value + campo_55.value + campo_57.value + campo_58.value).toUpperCase();
+                var ATARI2600 = (campo_50.value + campo_51.value + campo_52.value + campo_53.value + campo_54.value + campo_55.value + campo_56.value + campo_57.value + campo_58.value).toUpperCase();
                 if(ATARI2600 == 'ATARI2600'){
                     campo_50.disabled = true;
                     campo_51.disabled = true;
@@ -545,6 +545,51 @@
                     campo_57.style = 'border: solid #9acd32; background-color: black;'
                     campo_58.style = 'border: solid #9acd32; background-color: black;'
                 }
+                break
+
+            case 5:
+                var FAMICON = (campo_59.value + campo_48.value + campo_60.value + campo_61.value + campo_62.value + campo_63.value +  campo_64.value).toUpperCase();
+                if(FAMICON == 'FAMICON'){ 
+                    campo_59.disabled = true;
+                    campo_48.disabled = true;
+                    campo_60.disabled = true;
+                    campo_61.disabled = true;
+                    campo_62.disabled = true;
+                    campo_63.disabled = true;
+                    campo_64.disabled = true;
+                    campo_59.style = 'border: solid #9acd32; background-color: black;'
+                    campo_48.style = 'border: solid #9acd32; background-color: black;'
+                    campo_60.style = 'border: solid #9acd32; background-color: black;'
+                    campo_61.style = 'border: solid #9acd32; background-color: black;'
+                    campo_62.style = 'border: solid #9acd32; background-color: black;'
+                    campo_63.style = 'border: solid #9acd32; background-color: black;'
+                    campo_64.style = 'border: solid #9acd32; background-color: black;'
+                }
+                break
+            
+            case 6:
+                var MEGADRIVE = (campo_13.value + campo_65.value + campo_66.value + campo_52.value + campo_67.value + campo_28.value + campo_68.value + campo_69.value + campo_70.value).toUpperCase();
+                if(MEGADRIVE == 'MEGADRIVE'){
+                    campo_13.disabled = true;
+                    campo_65.disabled = true;
+                    campo_66.disabled = true;
+                    campo_52.disabled = true;
+                    campo_67.disabled = true;
+                    campo_28.disabled = true;
+                    campo_68.disabled = true;
+                    campo_69.disabled = true;
+                    campo_70.disabled = true;
+                    campo_13.style = 'border: solid #9acd32; background-color: black;'
+                    campo_65.style = 'border: solid #9acd32; background-color: black;'
+                    campo_66.style = 'border: solid #9acd32; background-color: black;'
+                    campo_52.style = 'border: solid #9acd32; background-color: black;'
+                    campo_67.style = 'border: solid #9acd32; background-color: black;'
+                    campo_28.style = 'border: solid #9acd32; background-color: black;'
+                    campo_68.style = 'border: solid #9acd32; background-color: black;'
+                    campo_69.style = 'border: solid #9acd32; background-color: black;'
+                    campo_70.style = 'border: solid #9acd32; background-color: black;'
+                }
+                break
         }
     }
 </script>
