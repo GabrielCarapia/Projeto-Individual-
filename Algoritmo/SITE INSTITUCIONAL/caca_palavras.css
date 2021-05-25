@@ -57,7 +57,7 @@ body{
 }
 
 .tg td{
-    border-color:white;
+    border-color:#237fe5;
     border-style:solid;
     border-width:3px;
     font-family:Arial, sans-serif;
@@ -111,8 +111,8 @@ body{
 }
 
 .div-fundo{
-    background-color: rgb(92, 92, 212);
-    height: 1500px;
+    background-color: rgb(30, 30, 80);
+    height: 1400px;
     width: 50%;
     margin-top: 50px;
     float: left;
@@ -132,18 +132,42 @@ input {
     font-size: 18px;
     text-align: center;
     background-color: #8fd6ff;
-    color: white;
+    color: rgb(30, 30, 80);
     border: solid 3px blue;
     font-family: Arial, Helvetica, sans-serif;
     outline: none;
 }
 
 .numero-da-coluna {
-    background-color: white;
+    background-color: rgb(194 121 192);
 }
 
+.fundo-da-div{
+    background-color: rgb(30, 30, 80);
+    height: 750px;
+    width: 30%;
+    float: right;
+    margin-right: 60px;
+    margin-top: 50px;
+    padding: 50px 50px;
+}
 
-input:disabled {
+.div-questoes{
+    text-align: center;
+    margin-top: 30px;
     color: white;
-    background-color: #8fd6ff
+    text-transform: uppercase;
 }
+
+.div-perguntas{
+    color: white;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
