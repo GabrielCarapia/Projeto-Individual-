@@ -1,0 +1,124 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/564x/a4/c3/92/a4c392f58f1ceb71a28a64067f2a4a02.jpg);
+}
+
+.container{
+    background-color: rgb(45, 45, 138);
+    border-bottom: 6px solid rgb(93, 95, 197);
+}
+
+.container img{
+    width: 5%;
+    height: 60px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.menu-site{
+    list-style: none;
+    padding: 0;
+}
+
+
+.menu-site li{
+    display: inline;
+}
+
+.container ul{
+    margin-left: 950px;
+}
+
+.menu-site li a{
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background .6s;
+}
+
+.menu-site li a:hover{
+    background-color: rgb(39, 129, 189);
+}
+
+
+.recebendo-usuario h1{
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+
+
+.jogo1{
+    background-color: rgb(45, 45, 138);
+    height: 160px;
+    width: 15%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 80px;
+    border: 5px solid #ca74cb;
+}
+/*#ca74cb*/
+.jogo1 img{
+    height: 120px;
+    width: 50%;
+    padding: 5px 5px;
+    display: flex;
+}
+
+.frase{
+    height: 24px;
+    width: 97%;
+    border-style: solid;
+    border-color: #ca74cb;
+    border-width: 5px 3px;
+}
+
+.frase-jogo1 a{
+    color: white;
+    display: table;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3px;
+    text-transform: uppercase;
+}
+
+.jogo2{
+    background-color: rgb(45, 45, 138);
+    height: 160px;
+    width: 15%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 80px;
+    border: 5px solid #ca74cb;
+}
+
+.jogo2 img{
+    height: 120px;
+    width: 50%;
+    padding: 5px 5px;
+    display: flex;
+}
+
+.frase{
+    height: 24px;
+    width: 97%;
+    border-style: solid;
+    border-color: #ca74cb;
+    border-width: 5px 3px;
+}
+
+.frase-jogo2 a{
+    color: white;
+    display: table;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3px;
+    text-transform: uppercase;
+}
