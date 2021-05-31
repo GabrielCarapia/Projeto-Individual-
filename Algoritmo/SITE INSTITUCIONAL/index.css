@@ -33,7 +33,7 @@ body{
 }
 
 .container ul{
-    margin-left: 850px;
+    margin-left: 950px;
 }
 
 .menu-site li a{
@@ -69,7 +69,7 @@ body{
 
 .div-mae{
     background-color:rgb(68, 89, 180) ;
-    height: 440px;
+    height: 470px;
     width: 80%;
     margin-top: 40px;
     padding: 100px 40px;
@@ -96,7 +96,7 @@ h2{
 
 .botao-ano{
     margin-top: 7px;
-    margin-right: 7px;
+    margin-right: 3px;
     color: rgb(162 169 231);
     background-color:rgb(45, 45, 138);
     font-size: 15px;
