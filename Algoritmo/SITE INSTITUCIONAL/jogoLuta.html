@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="simbolo-so.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jogoLuta.css">
+    <title>Games History - Jogo de luta</title>
+</head>
+<body>
+     <!--Menu-site-->
+     <div class="container">
+        <div class="menu-site">
+            <img src="logo-site-definido.png" alt="">
+            <ul>
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="">QUEM SOMOS?</a></li>
+                <li> <a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Fim Menu-site-->
+
+
+    <div class="div-luta">
+        <div class="div-container-luta">
+            <div class="tema-do-jogo">
+                <h1>Jogo de luta</h1>
+                <div id="div_lutadores_container">
+
+                    <div style="float: left; width: 49%">
+                        <img id="img_lutador_1" onclick="surrar_lutador1()" style="height: 300px;"
+                            src="https://images.uncyc.org/pt/2/24/491796.gif">
+            
+                        <div style="background-color: #28a745; width: 100%; height: 30px" id="div_vida_lutador1"></div>
+                    </div>
+            
+                    <div style="float: right; width: 50%">
+                        <img id="img_lutador_2" onclick="surrar_lutador2()" style="height: 300px;"
+                            src="https://images.uncyc.org/pt/5/53/Akuma-c-combo.gif">
+            
+                        <div style="background-color: #28a745; width: 100%; height: 30px" id="div_vida_lutador2"></div>
+                    </div>
+                    <div>
+                        <span style="float: left; margin-top: 20px;">
+                            Golpes sofridos pelo lutador 1: <b id="b_golpes_lutador1">0</b>
+                        </span>
+                        <br>
+                        <span style="float: right; margin-top: 20px;">
+                            Golpes sofridos pelo lutador 2: <b id="b_golpes_lutador2">0</b>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var contador_lutador1 = 0;
+    var vida_lutador1 = 100;
+    function surrar_lutador1() {
+        if (vida_lutador1 > 0) {
+
+            var chance_critica = vida_lutador1 - vida_lutador2; 
+
+            b_golpes_lutador1.innerHTML = ++contador_lutador1;
+
+            var potencia_golpe = 20;
+            var sorteio = parseInt(Math.random() * 100 + 1); 
+
+            if (sorteio <= chance_critica) {
+                potencia_golpe += ((chance_critica / 100) * 20); 
+                alert(`Lutador recebeu golpe crítico de ${potencia_golpe}, invés de 20`);
+            }
+            vida_lutador1 -= potencia_golpe;
+
+            if (vida_lutador1 <= 30) {
+                div_vida_lutador1.style.backgroundColor = 'red';
+            } else if (vida_lutador1 <= 60) {
+                div_vida_lutador1.style.backgroundColor = 'yellow';
+            }
+            if (vida_lutador1 <= 0) {
+                img_lutador_1.src = "https://www.nicepng.com/png/full/235-2359549_street-fighter-ko-png-ko-street-fighter-png.png";
+                vida_lutador1 = 0;
+            }
+            div_vida_lutador1.style.width = `${vida_lutador1}%`;
+        } else {
+            alert("Lutador já morreu :/");
+        }
+    }
+
+    var contador_lutador2 = 0;
+    var vida_lutador2 = 100;
+    var margin = 0;
+
+    function surrar_lutador2() {
+        if (vida_lutador2 > 0) {
+
+            b_golpes_lutador2.innerHTML = ++contador_lutador2;
+
+            var chance_critica = vida_lutador2 - vida_lutador1;
+
+            var potencia_golpe = 20;
+            var sorteio = parseInt(Math.random() * 100 + 1);
+            if (sorteio <= chance_critica) {
+                potencia_golpe += ((chance_critica / 100) * 20);
+                alert(`Lutador recebeu golpe crítico de ${potencia_golpe}, invés de 20`);
+            }
+            vida_lutador2 -= potencia_golpe;
+            margin += potencia_golpe;
+
+            if (vida_lutador2 <= 30) {
+                div_vida_lutador2.style.backgroundColor = 'red';
+            } else if (vida_lutador2 <= 60) {
+                div_vida_lutador2.style.backgroundColor = 'yellow';
+            }
+            if (vida_lutador2 <= 0) {
+                img_lutador_2.src = "https://www.nicepng.com/png/full/235-2359549_street-fighter-ko-png-ko-street-fighter-png.png";
+                vida_lutador1 = 0;
+            }
+            div_vida_lutador2.style.width = `${vida_lutador2}%`;
+            div_vida_lutador2.style.marginLeft = `${margin}%`;
+        } else {
+            alert("Lutador já morreu :/");
+        }
+    }
+
+</script>
