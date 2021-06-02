@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="CSS/cadastro.css">
     <title>Games History - Cadastro</title>
 </head>
+
 <body>
-     <!--Menu-site-->
-     <div class="container">
+    <!--Menu-site-->
+    <div class="container">
         <div class="menu-site">
             <img src="gif/logo-site-definido.png" alt="">
             <ul>
@@ -25,20 +27,25 @@
     <div class="div-cadastro">
         <div class="div-container">
             <div class="div-input">
-                <div class="cadastro">Cadastro</div>
-                Nome<br>
-                <input class="input-cadastro" type="text" placeholder="Digite seu nome"><br>
-                Email<br>
-                <input class="input-cadastro" type="text" placeholder="Digite seu email pessoal"><br>
-                Nickname<br>
-                <input class="input-cadastro" type="text" placeholder="Digite seu usuário nos jogos"><br>
-                Senha<br>
-                <input class="input-cadastro" type="password" placeholder="Digite sua senha"><br>
-                Confirmar senha<br>
-                <input class="input-cadastro" type="password" placeholder="Confirme sua senha">
-                <br><br><br>
-                <button class="botao-cadastrar"><a href="login.html">Cadastrar</a></button>
-
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <div class="cadastro">Cadastro</div>
+                    Nome<br>
+                    <input class="input-cadastro" name="nome" autofocus="autofocus" type="text"
+                        placeholder="Digite seu nome e sobrenome" required minlength="4"><br>
+                    Email<br>
+                    <input class="input-cadastro" name="login" type="email" placeholder="Digite seu email pessoal"
+                        required minlength="4"><br>
+                    Nickname<br>
+                    <input class="input-cadastro" type="text" name="nick" autofocus="autofocus"
+                        placeholder="Digite seu usuário nos jogos" required minlength="4"><br>
+                    Senha<br>
+                    <input class="input-cadastro" name="senha" type="password" placeholder="Digite sua senha" required
+                        minlength="4"><br>
+                    <!--Confirmar senha<br>
+                    <input class="input-cadastro" name="senha" type="password" placeholder="Confirme sua senha" required minlength="4">
+                <br><br><br>-->
+                    <button class="botao-cadastrar" id="btn_entrar"><a>Cadastrar</a></button>
+                </form>
             </div>
         </div>
     </div>
@@ -49,7 +56,29 @@
         </div>
     </div>
 </body>
+
 </html>
 <script>
-    
+       function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    //div_erro.innerHTML = resposta;
+                });
+            }
+        });
+
+        return false;
+    }
 </script>

@@ -1,6 +1,6 @@
-CREATE DATABASE gamesHistory;
+CREATE DATABASE GamesHistory;
 
-USE gamesHistory;
+USE GamesHistory;
 
 CREATE TABLE tbCadastro(
 idCadastro INT PRIMARY KEY AUTO_INCREMENT,
@@ -12,7 +12,7 @@ confirmarSenha VARCHAR(30)
 );
 
 CREATE TABLE tbProgressoUsuário(
-NiveldoUsuario INT PRIMARY KEY,
+idUsuario INT PRIMARY KEY,
 qtd_vitoria VARCHAR(45),
 qtd_derrotas VARCHAR(45),
 horasJogadas TIME
@@ -22,9 +22,13 @@ CREATE TABLE tbAvaliacaoUsuario(
 fkCadastro INT,
 FOREIGN KEY (fkCadastro) REFERENCES tbCadastro(idCadastro),
 fkProgreassoUsuario INT,
-FOREIGN KEY (fkProgressoUsuario) REFERENCES tbProgressoUsuario(idProgressoUsuaio)
+FOREIGN KEY (fkProgressoUsuario) REFERENCES tbProgressoUsuario(idProgressoUsuaio),
+dicaUsuarios VARCHAR(1000)
 );
 
+
+select*from tbCadastro;
+select*from tbProgressoUsuário;
 
 
 

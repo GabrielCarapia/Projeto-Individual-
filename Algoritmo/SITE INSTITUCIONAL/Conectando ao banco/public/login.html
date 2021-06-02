@@ -25,14 +25,21 @@
     <div class="div_login">
         <div class="div_altura_input">
             <div class="div_email_senha">
+                <form id="form_login" method="post" onsubmit="return entrar()">
+
                 <div class="login">Login</div>
+
                 <span class="texto">Email</span><br><br>
-                <input class="input" placeholder="Insira seu e-mail"><br><br>
+
+                <input class="input" name="login" placeholder="Insira o e-mail cadastrado"><br><br>
+
                 <span class="texto">Senha</span><br><br>
-                <input class="input-senha" type="password" placeholder="Insira sua senha">
+
+                <input class="input-senha" type="password" name="senha" placeholder="Insira sua senha">
                 <br><br><br>
-                <button class="botao-entrar"><a href="">Entrar</a></button>
+                <button class="botao-entrar" id="btn_entrar"><a>Entrar</a></button>
                 <span class="esquece-senha"><a href="">Esqueceu sua senha?</a></span>
+                </form>
             </div>
         </div>
     </div>
@@ -54,5 +61,34 @@
 </body>
 </html>
 <script>
-    
+     function entrar() {
+        //aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.email;
+                    sessionStorage.nome_usuario_meuapp = json.nicknameJogo;
+
+                    window.location.href = 'escolhaJogo.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    //finalizar_aguardar(texto);
+                });
+            }
+        });
+        return false;
+    }
 </script>

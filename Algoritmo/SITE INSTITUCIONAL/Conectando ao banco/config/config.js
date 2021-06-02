@@ -25,9 +25,9 @@ module.exports = {
   // Insira aqui seus dados do banco LOCAL - MySQL Workbench
   dev: {
     // altere APENAS username, password e database.
-    username: 'SEU_USUARIO',
-    password: 'SUA_SENHA',
-    database: 'NOME DO SEU BD',
+    username: 'root',
+    password: '123456',
+    database: 'GamesHistory',
     host: 'localhost',
     dialect: 'mysql',
     xuse_env_variable: 'DATABASE_URL',
