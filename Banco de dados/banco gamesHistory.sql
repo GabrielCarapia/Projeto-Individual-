@@ -11,24 +11,35 @@ senha VARCHAR(30),
 confirmarSenha VARCHAR(30)
 );
 
-CREATE TABLE tbProgressoUsuário(
-idUsuario INT PRIMARY KEY,
-qtd_vitoria VARCHAR(45),
-qtd_derrotas VARCHAR(45),
-horasJogadas TIME
+CREATE TABLE tbJogo(
+idJogo INT PRIMARY KEY AUTO_INCREMENT,
+nomeJogo VARCHAR(40)
 );
 
-CREATE TABLE tbAvaliacaoUsuario(
+CREATE TABLE tbDicadoUsuario(
+idDica INT PRIMARY KEY AUTO_INCREMENT,
+descricao VARCHAR(100),
 fkCadastro INT,
-FOREIGN KEY (fkCadastro) REFERENCES tbCadastro(idCadastro),
-fkProgreassoUsuario INT,
-FOREIGN KEY (fkProgressoUsuario) REFERENCES tbProgressoUsuario(idProgressoUsuaio),
-dicaUsuarios VARCHAR(1000)
+FOREIGN KEY (fkCadastro) REFERENCES tbCadastro(idCadastro)
 );
 
+
+CREATE TABLE tbProgresso(
+fkCadastroProgresso INT,
+FOREIGN KEY (fkCadastroProgresso) REFERENCES tbCadastro(idCadastro),
+fkJogo INT,
+FOREIGN KEY (fkJogo) REFERENCES tbJogo(idJogo),
+dataHoraJogada DATETIME,
+PRIMARY KEY (fkCadastroProgresso, fkJogo, dataHoraJogada),
+qtd_vitoria VARCHAR(45),
+qtd_derrotas VARCHAR(45)
+);
 
 select*from tbCadastro;
-select*from tbProgressoUsuário;
+
+drop database GamesHistory;
+
+
 
 
 
