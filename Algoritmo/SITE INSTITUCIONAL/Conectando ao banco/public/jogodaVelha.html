@@ -17,13 +17,25 @@
             <img src="gif/logo-site-definido.png" alt="">
             <ul>
                 <li> <a href="index.html">HOME</a></li>
-                <li> <a href="">QUEM SOMOS?</a></li>
+                <li> <a href="quem_sou.html">QUEM SOMOS?</a></li>
                 <li> <a href="login.html">LOGIN</a></li>
+                <li> <a href="digaJogo.html">JOGOS QUE GOSTA</a></li>
             </ul>
         </div>
     </div>
     <!--Fim Menu-site-->
 
+
+    <div class="vencendo-ou-perdendo">
+        <div class="">
+            <div class="numeros">
+                <div class="vitorias">Vitorias: <span id="trocando">0</span>
+                </div>
+                <div class="derrotas">Derrotas: <span>0</span> 
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="div-velha">
         <div class="div-container">
@@ -58,7 +70,7 @@
     var player2 = "O";
     var playTime = player1;
     var gameOver = false;
-
+    var contador = 0;
     AtulizaMostrador();
     inicializarEspacos();
 
@@ -105,7 +117,7 @@
             );
         }
     }
-    async function verificarVencedor(){
+    async function verificarVencedor() {
 
         var a1 = document.getElementById("a1").getAttribute("jogada");
         var a2 = document.getElementById("a2").getAttribute("jogada");
@@ -123,25 +135,30 @@
 
         var vencedor = "";
 
-        if((a1 == b1 && a1 == c1 && a1 != "") || (a1 == a2 && a1 == a3 && a1 != "") || (a1 == b2 && a1 == c3 && a1 != "")){
+        if ((a1 == b1 && a1 == c1 && a1 != "") || (a1 == a2 && a1 == a3 && a1 != "") || (a1 == b2 && a1 == c3 && a1 != "")) {
             vencedor = a1;
-        }else if((b2 == b1 && b2 == b3 && b2 != "") || (b2 == a2 && b2 == c2 && b2 != "") || (b2 == b3 && b2 == c1 && b2 != "")) {
+
+            trocando.innerHTML = ++contador
+        } else if ((b2 == b1 && b2 == b3 && b2 != "") || (b2 == a2 && b2 == c2 && b2 != "") || (b2 == b3 && b2 == c1 && b2 != "")) {
             vencedor = b2;
-        }else if((c3 == c2 && c3 == c1 && c3 != "") || (c3 == a3 && c3 == b3 && c3 != "")) {
+            trocando.innerHTML = ++contador
+        } else if ((c3 == c2 && c3 == c1 && c3 != "") || (c3 == a3 && c3 == b3 && c3 != "")) {
             vencedor = c3;
-        }else if(c1 == b2 && c1 == a3 && c1 != ""){
+            trocando.innerHTML = ++contador
+        } else if (c1 == b2 && c1 == a3 && c1 != "") {
             vencedor = c1;
+            trocando.innerHTML = ++contador
         }
 
-        if(vencedor != ""){
+        if (vencedor != "") {
             gameOver = true;
 
             await sleep(50);
             alert(`O ganhador foi o: ${vencedor}`)
         }
     }
-    function sleep(ms){
-        
-        return new Promise(resolve => setTimeout(resolve, ms) )
+    function sleep(ms) {
+
+        return new Promise(resolve => setTimeout(resolve, ms))
     }
 </script>

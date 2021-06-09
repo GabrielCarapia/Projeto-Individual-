@@ -15,12 +15,24 @@
             <img src="gif/logo-site-definido.png" alt="">
             <ul>
                 <li> <a href="index.html">HOME</a></li>
-                <li> <a href="">QUEM SOMOS?</a></li>
+                <li> <a href="quem_sou.html">QUEM SOMOS?</a></li>
                 <li> <a href="login.html">LOGIN</a></li>
+                <li> <a href="digaJogo.html">JOGOS QUE GOSTA</a></li>
             </ul>
         </div>
     </div>
     <!--Fim Menu-site-->
+
+    <div class="vencendo-ou-perdendo">
+        <div class="">
+            <div class="numeros">
+                <div class="vitorias">Vitorias: <span id="trocando">0</span>
+                </div>
+                <div class="derrotas">Derrotas: <span>0</span> 
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="div-luta">
@@ -60,6 +72,7 @@
 </body>
 </html>
 <script>
+    var vitoria = 0;
     var contador_lutador1 = 0;
     var vida_lutador1 = 100;
     function surrar_lutador1() {
@@ -86,6 +99,7 @@
             if (vida_lutador1 <= 0) {
                 img_lutador_1.src = "https://www.nicepng.com/png/full/235-2359549_street-fighter-ko-png-ko-street-fighter-png.png";
                 vida_lutador1 = 0;
+                trocando.innerHTML = ++vitoria
             }
             div_vida_lutador1.style.width = `${vida_lutador1}%`;
         } else {
@@ -96,7 +110,7 @@
     var contador_lutador2 = 0;
     var vida_lutador2 = 100;
     var margin = 0;
-
+    var vitoria = 0;
     function surrar_lutador2() {
         if (vida_lutador2 > 0) {
 
@@ -121,6 +135,7 @@
             if (vida_lutador2 <= 0) {
                 img_lutador_2.src = "https://www.nicepng.com/png/full/235-2359549_street-fighter-ko-png-ko-street-fighter-png.png";
                 vida_lutador1 = 0;
+                trocando.innerHTML = ++vitoria
             }
             div_vida_lutador2.style.width = `${vida_lutador2}%`;
             div_vida_lutador2.style.marginLeft = `${margin}%`;

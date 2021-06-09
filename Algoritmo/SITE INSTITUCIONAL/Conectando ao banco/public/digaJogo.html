@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="simbolo-so.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/digaJogo.css">
+    <title>Games History - Deixando Jogo</title>
+</head>
+<body>
+    <!--Menu-site-->
+    <div class="container">
+        <div class="menu-site">
+            <img src="gif/logo-site-definido.png" alt="">
+            <ul>
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="quem_sou.html">QUEM SOMOS?</a></li>
+                <li> <a href="login.html">LOGIN</a></li>
+                <li> <a href="digaJogo.html">JOGOS QUE GOSTA</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Fim Menu-site-->
+
+    <div class="div_vetor">
+        <div class="deixando-jogo">
+            <div class="jogo">
+                Meu jogo preferido é: <input id="in_jogos" placeholder="Digite o nome de um jogo">
+                <br><br>
+                <button class="botao" onclick="cadastrarLinha()">Gravar Jogo</button>
+                <button class="botao" onclick="pesquisarLinha()">Pesquisar Jogo</button>
+                <br>
+                <div id="div_lista_linhas"></div>
+                <br>
+                <div id="div_lista_ocorrencias"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var listaJogos = [];
+    function cadastrarLinha() {
+        listaJogos.push(in_jogos.value);
+        alert("Ótimo jogo, obrigado!")
+    }
+
+    function pesquisarLinha(){
+        var listaDeOcorrencias = [];
+        var linhaPesquisada = in_jogos.value;
+        for(var contador = 0; contador < listaJogos.length;) {
+            var linhaJogos = listaJogos[contador++];
+            if(linhaJogos.toLowerCase() == linhaPesquisada.toLowerCase()) {
+                listaDeOcorrencias.push(contador);
+            }
+        }
+
+        var numeroDeOcorrencias = listaDeOcorrencias.length;
+        if(numeroDeOcorrencias == 0) {
+            div_lista_ocorrencias.innerHTML = "Você nunca Inseriu esse Jogo";
+        }
+    }
+</script>

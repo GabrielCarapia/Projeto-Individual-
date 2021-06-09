@@ -33,7 +33,7 @@ body{
 }
 
 .container ul{
-    margin-left: 950px;
+    margin-left: 800px;
 }
 
 .menu-site li a{
@@ -97,4 +97,28 @@ body{
     width: 288px;
     height: 288px;
     margin: auto;
+}
+
+.vencendo-ou-perdendo{
+    background-color: rgb(45, 45, 138);
+    width: 30%;
+    margin-top: 15px;
+    padding: 20px 20px;
+}
+
+.numeros{
+    text-align: center;
+    display: flex;
+}
+
+.vitorias{
+    color: green;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.derrotas{
+    color: red;
+    font-size: 30px;
+    margin-top: 20px;
 }
